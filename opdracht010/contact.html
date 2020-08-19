@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Informatie over me zelf</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <header>    
+            <h1 class="center-title">Dit is mijn opdracht website</h1>
+            <nav>
+              <ul class="button-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About me</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <main>
+          <form name="contact" method="POST" data-netlify="true">
+            Name
+            <input type="text" value="Name" name="text">
+            <br>
+            Email
+            <input type="email" value="Email" name="email">
+            <br>
+            Phone number
+            <input type="tel" value="Phone number" name="phone"><br>
+            Age
+            <input type="number" value="age" name="age"><br>
+            Date of birth
+            <input type="date" value="Date of birth" name="birth"><br>
+            gender
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br>
+            Your favo food<br>
+            <input type="checkbox" id="Frans" name="Frans" value="Frans">
+            <label for="Frans"> Frans</label><br>
+            <input type="checkbox" id="Italian" name="Italian" value="Italian">
+            <label for="Italian"> Italian</label><br>
+            <input type="checkbox" id="Greek" name="Greek" value="Greek">
+            <label for="Greek"> Greek</label><br>
+            <label for="favcolor">Select your favorite color:</label><br>
+            <input type="color" id="favcolor" name="favcolor"><br>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br>
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage"><br>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+                      
+          </form>
+        </main>
+
+        <footer>
+          <a href="https://google.com">Klaar met mijn pagina? google dan lekker verder!</a>
+        </footer>
+
+    </body>
+</html>
