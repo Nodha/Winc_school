@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+body{
+  background-color: rgb(83, 52, 52);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  
+
+}
+
+.navbar{
+  width: 300px;
+  height: 100%;
+  background-color: #262626;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 0 0 80%;
+  transition: right .8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change{
+  right: 0;
+}
+
+.hamburger-menu{
+  width: 35px;
+  height: 30px;
+
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line{
+  width: 100%;
+  height: 3px;
+  background-color: chocolate;
+  transition: all .8s;
+}
+
+.change .line-1{
+  transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-3{
+  transform: rotateZ(45deg) translate(-8px, -6px);;
+}
+
+.change .line-2{
+  opacity: 0;
+}
+
+.menu-hamburger-list{
+  text-align: right;
+}
+
+.menu__item{
+  list-style: none;
+  margin: 25px;
+  text-decoration: none;
+  color: #eeeeee;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+}
+
+.menu__item::before,
+.menu__item::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: chocolate;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.menu__item::after{
+  bottom: 0;
+  transform-origin: right;
+}
+.menu__item::before{
+  top: 0;
+  transform-origin: left;
+}
+
+.menu__item:hover::before,
+.menu__item:hover::after{
+  transform: scaleX(1);
+}
+
+
