@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.logo_name{
+text-align: center;
+
+}
+
+.topbar {
+    background: black;
+    margin: 0 auto;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.navbar{
+    width: 100%;
+    
+}
+
+.btn_list {
+    display: flex;
+    margin: 13px;
+    padding: 30px;
+}
+
+.radio_btn{
+    background-color: black;
+    margin: auto;
+    list-style: none;
+    border-radius: 2px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+#filterOptions{
+        display: flex;
+        
+    }
+
+#grid {
+    margin: auto;
+    width: 64%;
+    height: 100%;
+}
+.poster{
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+}
+.column {
+    display: inline-block;
+    width: 25%;
+}
